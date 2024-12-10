@@ -5,9 +5,9 @@ const Create = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const history = useNavigate();
+
   const handlesubmit = (e) => {
     e.preventDefault();
-
     axios.post("https://67567a9d11ce847c992ce542.mockapi.io/CRUD", {
       name: name,
       email: email,
